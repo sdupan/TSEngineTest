@@ -20,6 +20,7 @@ namespace UnityTSGame
         protected static string serviceName = BFGameMode.GAME_MODE.ToString() + ":__com.lxyd.zoocanteen__";
 #if UNITY_ANDROID
         protected static AndroidJavaClass _keyStoreUtil;
+        protected static AndroidJavaObject _assmetManager;
 #elif UNITY_IOS
         protected static string accountName = "__zhgame_account__";
 
@@ -254,10 +255,15 @@ namespace UnityTSGame
 #if UNITY_ANDROID
                 try
                 {
-                    AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-                    AndroidJavaObject currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
-                    AndroidJavaObject assetMgr = currentActivity.Call<AndroidJavaObject>("getAssets");
-                    AndroidJavaObject inputStream = assetMgr.Call<AndroidJavaObject>("open", "aa/" + PlatformMappingService.GetPlatformPathSubFolder() + "/" + fileName);
+                    if(BFGameOSUtil._assmetManager == null) {
+                        AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+                        AndroidJavaObject currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+                        AndroidJavaObject context = currentActivity.Call<AndroidJavaObject>("createPackageContext", "com.lxyd.animalplaza", 0);
+                        BFGameOSUtil._assmetManager = context.Call<AndroidJavaObject>("getAssets");
+                    }
+
+                    // PAD分发模式下，资源路径不带平台名(Android/iOS)
+                    AndroidJavaObject inputStream = BFGameOSUtil._assmetManager.Call<AndroidJavaObject>("open", "aa/" + PlatformMappingService.GetPlatformPathSubFolder() + "/" + fileName);
                     if(inputStream != null)
                     {
                         inputStream.Call("close");
@@ -266,7 +272,9 @@ namespace UnityTSGame
                 }
                 catch(Exception e)
                 {
-                    Debug.Log("[BFGameOSUtil] - StreamAssetsFileExist -->Exception-->" + e.ToString());
+                    Debug.Log("[BFGameOSUtil] - StreamAssetsFileExist -->Exception--00>" + path);
+                    Debug.Log("[BFGameOSUtil] - StreamAssetsFileExist -->Exception--11>" + fileName);
+                    Debug.Log("[BFGameOSUtil] - StreamAssetsFileExist -->Exception--22>" + e.ToString());
                 }
 #endif
             }
@@ -347,6 +355,14 @@ namespace UnityTSGame
 #if UNITY_IPHONE || UNITY_IOS || UNITY_ANDROID
             // BuglyAgent.ReportException(name, message, stackTrace);
 #endif
+        }
+
+        public static int GetPhoneGeneration()
+        {
+#if UNITY_IPHONE || UNITY_IOS
+            return (int)UnityEngine.iOS.Device.generation;
+#endif
+            return 0;
         }
 
 #if UNITY_ANDROID
