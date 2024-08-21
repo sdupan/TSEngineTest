@@ -1,0 +1,184 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468a46d0ae32c3544b7d98094e6448a9, type: 3}
+  m_Name: AddressableAssetSettings
+  m_EditorClassIdentifier: 
+  m_DefaultGroup: d2ad40c076e12a64bbe25f325a653647
+  m_currentHash:
+    serializedVersion: 2
+    Hash: e5ed1ee769a8c9c3c91db10b21eee0e3
+  m_OptimizeCatalogSize: 0
+  m_BuildRemoteCatalog: 1
+  m_BundleLocalCatalog: 0
+  m_CatalogRequestsTimeout: 0
+  m_DisableCatalogUpdateOnStart: 0
+  m_IgnoreUnsupportedFilesInBuild: 0
+  m_UniqueBundleIds: 0
+  m_NonRecursiveBuilding: 1
+  m_CCDEnabled: 0
+  m_maxConcurrentWebRequests: 3
+  m_ContiguousBundles: 1
+  m_StripUnityVersionFromBundleBuild: 0
+  m_DisableVisibleSubAssetRepresentations: 0
+  m_ShaderBundleNaming: 0
+  m_ShaderBundleCustomNaming: 
+  m_MonoScriptBundleNaming: 0
+  m_CheckForContentUpdateRestrictionsOption: 0
+  m_MonoScriptBundleCustomNaming: 
+  m_RemoteCatalogBuildPath:
+    m_Id: 3cfc54102428c51438dcc962f6f577f8
+  m_RemoteCatalogLoadPath:
+    m_Id: d65771925d465734b811bccda491084d
+  m_ContentStateBuildPathProfileVariableName: <default settings path>
+  m_CustomContentStateBuildPath: 
+  m_ContentStateBuildPath: 
+  m_BuildAddressablesWithPlayerBuild: 0
+  m_overridePlayerVersion: lxyd
+  m_GroupAssets:
+  - {fileID: 11400000, guid: 7fad55f3c27695744a042988bad34f93, type: 2}
+  - {fileID: 11400000, guid: d10950313dab8c440a2f6af778edfbe9, type: 2}
+  - {fileID: 11400000, guid: b31691989c220b7408054f722f79ffc9, type: 2}
+  - {fileID: 11400000, guid: a43f86ae62d804c4b8c84af1cb1bddd4, type: 2}
+  m_BuildSettings:
+    m_CompileScriptsInVirtualMode: 0
+    m_CleanupStreamingAssetsAfterBuilds: 1
+    m_LogResourceManagerExceptions: 1
+    m_BundleBuildPath: Temp/com.unity.addressables/AssetBundles
+  m_ProfileSettings:
+    m_Profiles:
+    - m_InheritedParent: 
+      m_Id: dd24d7e2c5a5bd742a38356b8589ba27
+      m_ProfileName: Default
+      m_Values:
+      - m_Id: fa33c8648f28c4541ae5d169c11829c5
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 18731e712df7a034d923eb6cf55838b8
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: 37e538df0ecd828428fcd68fb86acf26
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: 3cfc54102428c51438dcc962f6f577f8
+        m_Value: LXYDRemoteRes/[BuildTarget]
+      - m_Id: d65771925d465734b811bccda491084d
+        m_Value: http://106.75.166.77/zoo/canteen/innertest/[BuildTarget]
+    - m_InheritedParent: 
+      m_Id: f83d9873ef8b0644e8b711ad69492b31
+      m_ProfileName: OnlineTest_Android
+      m_Values:
+      - m_Id: fa33c8648f28c4541ae5d169c11829c5
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 18731e712df7a034d923eb6cf55838b8
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: 37e538df0ecd828428fcd68fb86acf26
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: 3cfc54102428c51438dcc962f6f577f8
+        m_Value: LXYDRemoteRes_OL/[BuildTarget]
+      - m_Id: d65771925d465734b811bccda491084d
+        m_Value: http://106.75.166.77/zoo/canteen/innertest/[BuildTarget]
+    - m_InheritedParent: 
+      m_Id: c64e915a15b9c0744a3b97d472002151
+      m_ProfileName: Develop_Android
+      m_Values:
+      - m_Id: fa33c8648f28c4541ae5d169c11829c5
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 18731e712df7a034d923eb6cf55838b8
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: 37e538df0ecd828428fcd68fb86acf26
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: 3cfc54102428c51438dcc962f6f577f8
+        m_Value: LXYDRemoteRes_Dev/[BuildTarget]
+      - m_Id: d65771925d465734b811bccda491084d
+        m_Value: http://106.75.166.77/zoo/canteen/innertest/[BuildTarget]
+    - m_InheritedParent: 
+      m_Id: 7db4ca6706f89c44fbdbfe050a1450c8
+      m_ProfileName: Default_iOS
+      m_Values:
+      - m_Id: fa33c8648f28c4541ae5d169c11829c5
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 18731e712df7a034d923eb6cf55838b8
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: 37e538df0ecd828428fcd68fb86acf26
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: 3cfc54102428c51438dcc962f6f577f8
+        m_Value: LXYDRemoteRes/[BuildTarget]
+      - m_Id: d65771925d465734b811bccda491084d
+        m_Value: http://106.75.166.77/zoo/canteen/innertest/[BuildTarget]
+    - m_InheritedParent: 
+      m_Id: 3d98193c194fada488653ee72dd0b7b6
+      m_ProfileName: Develop_iOS
+      m_Values:
+      - m_Id: fa33c8648f28c4541ae5d169c11829c5
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 18731e712df7a034d923eb6cf55838b8
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: 37e538df0ecd828428fcd68fb86acf26
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: 3cfc54102428c51438dcc962f6f577f8
+        m_Value: LXYDRemoteRes_Dev/[BuildTarget]
+      - m_Id: d65771925d465734b811bccda491084d
+        m_Value: http://106.75.166.77/zoo/canteen/innertest/[BuildTarget]
+    - m_InheritedParent: 
+      m_Id: 01408b3ad41484f42b17e6ed1131b75e
+      m_ProfileName: OnlineTest_iOS
+      m_Values:
+      - m_Id: fa33c8648f28c4541ae5d169c11829c5
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 18731e712df7a034d923eb6cf55838b8
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: 37e538df0ecd828428fcd68fb86acf26
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: 3cfc54102428c51438dcc962f6f577f8
+        m_Value: LXYDRemoteRes_OL/[BuildTarget]
+      - m_Id: d65771925d465734b811bccda491084d
+        m_Value: http://106.75.166.77/zoo/canteen/innertest/[BuildTarget]
+    m_ProfileEntryNames:
+    - m_Id: fa33c8648f28c4541ae5d169c11829c5
+      m_Name: BuildTarget
+      m_InlineUsage: 0
+    - m_Id: 18731e712df7a034d923eb6cf55838b8
+      m_Name: Local.BuildPath
+      m_InlineUsage: 0
+    - m_Id: 37e538df0ecd828428fcd68fb86acf26
+      m_Name: Local.LoadPath
+      m_InlineUsage: 0
+    - m_Id: 3cfc54102428c51438dcc962f6f577f8
+      m_Name: Remote.BuildPath
+      m_InlineUsage: 0
+    - m_Id: d65771925d465734b811bccda491084d
+      m_Name: Remote.LoadPath
+      m_InlineUsage: 0
+    m_ProfileVersion: 1
+  m_LabelTable:
+    m_LabelNames:
+    - default
+    - game
+    - fairygui
+    - public_ui
+  m_SchemaTemplates: []
+  m_GroupTemplateObjects:
+  - {fileID: 11400000, guid: 13fd95804d80d574ea7e009d24fe3c51, type: 2}
+  m_InitializationObjects: []
+  m_CertificateHandlerType:
+    m_AssemblyName: 
+    m_ClassName: 
+  m_ActivePlayerDataBuilderIndex: 3
+  m_DataBuilders:
+  - {fileID: 11400000, guid: 61da54fe87e32d74d926d42395598d73, type: 2}
+  - {fileID: 11400000, guid: b81a90297e689b146acd35afe4b64565, type: 2}
+  - {fileID: 11400000, guid: 1f8fa2e8c17f5c942901b03dd8b12eb4, type: 2}
+  - {fileID: 11400000, guid: 985a553145c7c8d40bc4c421302bb9d8, type: 2}
+  m_ActiveProfileId: c64e915a15b9c0744a3b97d472002151
+  m_HostingServicesManager:
+    m_HostingServiceInfos: []
+    m_Settings: {fileID: 11400000}
+    m_NextInstanceId: 0
+    m_RegisteredServiceTypeRefs: []
+    m_PingTimeoutInMilliseconds: 5000

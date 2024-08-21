@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: game_js
+  m_EditorClassIdentifier: 
+  m_GroupName: game_js
+  m_Data:
+    m_SerializedData: []
+  m_GUID: d2ad40c076e12a64bbe25f325a653647
+  m_SerializeEntries:
+  - m_GUID: e9a3c600eaa405f448ae841822d9afdc
+    m_Address: math
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bec9a9b3cf1576b45a15686f26daa280
+    m_Address: moment
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e76527d645c6c384ab983e199c8b1b91
+    m_Address: moment-timezone
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 202197d5d00866347adde7e3ac2fb583
+    m_Address: onChange
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6ac2ed8a3b3d42e4782cd45ae4943a92
+    m_Address: protobuf-bundles
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 276a55d958e6e7547bd8f09b0dbf054f
+    m_Address: protobuf-library
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6d74d34b743cbcb46ace1c7b02641b6e
+    m_Address: reflect-metadata
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e4b3f1e50d4ddc340b3c9704190712ca
+    m_Address: unity_ts_engine
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5a2d39ca1af21e4bb08ef4a99dbc29c
+    m_Address: csharp
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dca81069c0e30664da556f5a8d04d9d4
+    m_Address: dispose
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 331d0daad62f4b54fa16932e9fa8744b
+    m_Address: events
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 29abeeb6b6a72714e95b934aae9a10f9
+    m_Address: init
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0d715f0353e692240b462301d5ed99fb
+    m_Address: init_il2cpp
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f712568335077bb42873bcbc77d323d8
+    m_Address: log
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9aefe1db631176042a44bd7bfe283190
+    m_Address: nodepatch
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6319f0a320459c44f98cd20b3f22187d
+    m_Address: polyfill
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 182c1437bbb59a245851a9b6a651a48f
+    m_Address: promises
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9990c9ccc68eba640ad2de468798ade4
+    m_Address: timer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: adbb31c914ace2748b457521bcf0e3c3
+    m_Address: bundle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae758a03917cc0d41b2856f4936f2b75
+    m_Address: load
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 78a1b8dbd65958444a389f660a8c8c59
+    m_Address: modular
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - game
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 2a31e417dc14c81449201ba1c750dad7, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 315a5f68575d2da479643aa96fc056fa, type: 2}
+    - {fileID: 11400000, guid: 88e960bedd6a7f54b8bd23e023f1c5ce, type: 2}

@@ -1,0 +1,51 @@
+'use strict';
+
+require('unity_ts_engine');
+require('reflect-metadata');
+var puerts = require('puerts');
+
+class TestMainView extends UTGEngine.BaseView {
+    constructor() {
+        super("Base", "Main");
+    }
+    _onUILoaded() {
+        super._onUILoaded();
+        CS.FairyGUI.GRoot.inst.AddChild(this._view);
+        this._edit = this._view.GetChild("edit").asTextInput;
+        this._edit.editable = false;
+        let btn = this._view.GetChild("get").asButton;
+        btn.onClick.Set(this._onClickGet.bind(this));
+        btn = this._view.GetChild("del").asButton;
+        btn.onClick.Set(this._onClickDelete.bind(this));
+        btn = this._view.GetChild("set").asButton;
+        btn.onClick.Set(this._onClickSet.bind(this));
+    }
+    _onClickGet() {
+        let result = CS.UnityTSGame.BFGameOSUtil.GetKeyChainContent("__test__key__");
+        this._edit.text += "GetKeyChainContent-->:" + result + "\n";
+    }
+    _onClickDelete() {
+        let result = CS.UnityTSGame.BFGameOSUtil.deleteKeyChainContent("__test__key__");
+        this._edit.text += "DeleteKeyChainContent-->:" + result + "\n";
+    }
+    _onClickSet() {
+        let result = CS.UnityTSGame.BFGameOSUtil.SetKeyChainContent("__test__key__", "elcfebdkwroonzbksocopapibqdiobuw");
+        this._edit.text += "SetKeyChainContent-->:" + result + "\n";
+    }
+}
+
+class GameEntry extends UTGEngine.GameMain {
+    constructor() {
+        super();
+    }
+    _onGameStart() {
+        this._startup();
+    }
+    async _startup() {
+        await puerts.$promise(CS.UnityTSGame.ResourceManager.PreloadGUIPkgBytes("fairygui"));
+        await puerts.$promise(CS.UnityTSGame.ResourceManager.PreloadPublicUITextures("public_ui"));
+        new TestMainView();
+    }
+}
+new GameEntry();
+//# sourceMappingURL=bundle.js.map
